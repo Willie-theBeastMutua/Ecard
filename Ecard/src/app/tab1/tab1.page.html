@@ -1,0 +1,89 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 1
+    </ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content [fullscreen]="true">
+  <div class="tp-wrapper">
+    <div class="tp-box" (click)="toggleFlip()" [@flipState]="flip">
+      <div class="tp-box__side tp-box__front">
+
+        <ion-card style="margin-right: 20px;" class="Ecard">
+          <div>
+            <div style="background-color: #f3c600; height: 15px;">
+            </div>
+            <div style="background-color: #FFDE59; height: 25px;">
+            </div>
+          </div>
+          <div class="logo">
+            <img style="height: 80px; width: 150px;" src="\assets\images\MacMI-logonoBack.png">
+          </div>
+          <div class="avatar">
+            <ion-avatar class="avatarimg">
+              <img src="https://ionicframework.com/docs/img/demos/avatar.svg">
+            </ion-avatar>
+          </div>
+
+          <h1 style="font-weight: bold; color: black; font-size:x-large; margin-bottom: 0;">Jane Doe</h1>
+          <h2 style="color: rgb(83, 80, 80); font-size:medium; margin-top: 0; margin-bottom: 30px;">CEO & Co-Founder
+          </h2>
+
+
+          <div style="position: relative; bottom:-0px;">
+            <div style="background-color: #FFDE59; height: 25px;">
+            </div>
+            <div style="background-color:#f3c600 ; height: 15px;">
+            </div>
+          </div>
+        </ion-card>
+
+      </div>
+      <div class="tp-box__side tp-box__back">
+        <ion-card style="margin-right: 20px;" class="Ecard">
+          <div>
+            <div style="background-color: #f3c600; height: 15px;">
+            </div>
+            <div style="background-color: #FFDE59; height: 25px;">
+            </div>
+          </div>
+          <div class="logo">
+            <img style="height: 80px; width: 150px; margin-bottom: 2%;" src="\assets\images\MacMI-logonoBack.png">
+          </div>
+          <div style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: -15%;
+          ">
+            <qrcode style="margin-top : 5px;" [qrdata]="vCardData" [width]="200"></qrcode>
+          </div>
+          <div class="contacts">
+            <div class="speccontacts">
+              <ion-icon name="call-outline" slot="start" style="color: #FFDE59; padding-right: 10px;"></ion-icon>
+              <h3 style="font-size:small; color: black;font-weight: bolder;">+254-(792)-718714</h3>
+            </div>
+
+            <div class="speccontacts">
+              <ion-icon name="send-outline" slot="start" style="color: #FFDE59; padding-right: 10px;"></ion-icon>
+              <h3 style="font-size:small; color: black;font-weight: bolder;">wilsonmacmi.com</h3>
+            </div>
+
+            <div class="speccontacts">
+              <ion-icon name="globe-outline" slot="start" style="color: #FFDE59; padding-right: 10px;"></ion-icon>
+              <h3 style="font-size:small; color: black;font-weight: bolder;">www.macmi.com</h3>
+            </div>
+          </div>
+          <div style="position: relative;">
+            <div style="background-color: #FFDE59; height: 25px;">
+            </div>
+            <div style="background-color:#f3c600 ; height: 15px;">
+            </div>
+          </div>
+        </ion-card>
+      </div>
+    </div>
+  </div>
+</ion-content>
