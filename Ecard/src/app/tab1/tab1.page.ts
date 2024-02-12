@@ -24,12 +24,12 @@ export class Tab1Page implements OnInit {
   ngOnInit() {
   }
   ngAfterViewInit(){
-    let Fname = "Wilson",
-    lname = "mutua",
-    org = "MacMI Safaris",
-    url = "www.macmi.co.ke",
-    email = "wilson@macmi.co.ke",
-    tel = "0792718714"
+    let Fname = "Anthony",
+    lname = "Wekesa",
+    org = "KeNHA",
+    url = "https://kenha.co.ke/",
+    email = "thonymsai1@gmail.com",
+    tel = "+254712555513"
 
     this.vCardData= `BEGIN:VCARD
 version:3.0
